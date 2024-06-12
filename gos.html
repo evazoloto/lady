@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Website</title>
+    <link rel="stylesheet" href="gos.css" />
+    <script src="gos.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <a href="#">Your Logo</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <button id="darkModeToggle">🌒</button>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="welcome-message">Welcome to the site!</div>
+      <button id="modalBtn" class="modal-btn">Open Modal</button>
+    </section>
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Modal Header</h2>
+        <p>This is a simple modal window. You can add any content here.</p>
+      </div>
+    </div>
+
+    <div id="about" class="content-section">
+      <h2 class="myH2">About</h2>
+      <p class="myP">This is a responsive fixed navbar animated on scroll</p>
+      <p class="myP">I HOPE YOU FIND THIS USEFUL</p>
+      <p class="myP">Albi</p>
+      <p class="myP">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ratione
+        facere animi impedit rem labore sint repellendus ipsa sapiente
+        voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae
+        id inventore quod voluptate qui deserunt, quis placeat, tempora ex
+        totam, dolore sequi harum eos voluptatibus animi labore officiis minus
+        laboriosam.
+      </p>
+    </div>
+    <br />
+    <br />
+
+    <!-- image slider -->
+    <div class="slider-container">
+      <div id="slide-number" class="slide-number"></div>
+      <img
+        src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+        alt="Slide 1"
+      />
+      <img
+        src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+        alt="Slide 2"
+      />
+      <img
+        src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+        alt="Slide 3"
+      />
+      <img
+        src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+        alt="Slide 4"
+      />
+      <img
+        src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+        alt="Slide 5"
+      />
+    </div>
+    <div class="slider-controls">
+      <span id="prev" class="prev">Previous</span>
+      <span id="indicators" class="indicators"></span>
+      <span id="next" class="next">Next</span>
+    </div>
+    <br />
+    <br />
+    <div class="tabContainer">
+      <div class="buttonContainer">
+        <button onclick="showPanel(0,'')">Tab 1</button>
+        <button onclick="showPanel(1,'')">Tab 2</button>
+        <button onclick="showPanel(2,'')">Tab 3</button>
+        <button onclick="showPanel(3,'')">Tab 4</button>
+      </div>
+      <div class="tabPanel">Tab 1:Content</div>
+      <div class="tabPanel">Tab 2:Content</div>
+      <div class="tabPanel">Tab 3:Content</div>
+      <div class="tabPanel">Tab 4:Content</div>
+    </div>
+  </body>
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </div>
+  </footer>
+</html>
